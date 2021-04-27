@@ -1,0 +1,52 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Endpoints para RestAPI Haibu",
+    "version": "1.0.0",
+    "title": "RestAPI Haibu"
+  },
+  "host": "localhost:8080",
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "Exercises",
+      "description": "Resultados de ejercicios"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/exercises/{exerciseId}": {
+      "get": {
+        "tags": [
+          "Exercises"
+        ],
+        "summary": "Obtener Resultado por número de ejercicio",
+        "description": "Los números de los ejercicios parten del 0 hasta el 7",
+        "operationId": "exerciseId",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "exerciseId",
+            "in": "path",
+            "description": "Numero de ejercicio",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "success"
+          },
+          "404": {
+            "description": "Tarea no encontrada"
+          }
+        }
+      }
+    }
+  }
+}

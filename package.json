@@ -1,0 +1,25 @@
+{
+  "name": "haibu-backend",
+  "version": "1.0.0",
+  "description": "Prueba técnica de Backend",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jotak1/haibu-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jotak1/haibu-backend/issues"
+  },
+  "homepage": "https://github.com/Jotak1/haibu-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "swagger-ui-express": "^4.1.6"
+  }
+}
